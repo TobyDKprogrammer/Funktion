@@ -1,0 +1,55 @@
+/* Baseline styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Produkter styling */
+  .products {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  /* Kurv ikon styling */
+  #cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  #cart-count {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    z-index: 1000;
+  }
+  
+  /* Slet knap styling */
+  .delete-button {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

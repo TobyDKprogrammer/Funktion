@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopcart Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Kurv ikon med antal varer -->
+ <div id="cart-icon" onclick="toggleCart()">
+    🛒<span id="cart-count">0</span>
+  </div>
+
+  <!-- Produkter -->
+  <div class="products">
+    <div class="product">
+      <h2>Produkt 1</h2>
+      <p>Pris: 100 kr</p>
+      <button onclick="addToCart('Produkt 1', 100)">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+      <h2>Produkt 2</h2>
+      <p>Pris: 150 kr</p>
+      <button onclick="addToCart('Produkt 2', 150)">Tilføj til kurv</button>
+    </div>
+  </div>
+
+  <!-- Kurv Modal -->
+  <div id="cart-modal" class="modal">
+    <h2>Din Kurv</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="total-price">0</span> kr</p>
+    <button onclick="toggleCart()">Luk</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
