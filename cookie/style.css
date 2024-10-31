@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cookie-popup {
+    width: 100vw; /* Dækker hele viewportens bredde */
+position: fixed;
+bottom: 0; /* Placerer boksen i bunden */
+left: 0; /* Starter fra venstre side */
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
+z-index: 1000;
+}
+
+.cookie-popup button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-popup button:hover {
+    opacity: 0.8;
+}
+
